@@ -11,64 +11,70 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo.ico">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-8 pr-0">
+            <div class="col-8 pr-0 pl-0">
                 <div class="d-flex w-100">
                     <ul class="user-infolist">
-                        <li>
+                        <li class="userinfo-color" onclick="openPage('contact-us', 'contact-us1', this, '#ffce6f')">
                             <h3>Contact us</h3>
                         </li>
                         <li>
                             <hr>
                         </li>
-                        <li>
+                        <li class="userinfo-color" onclick="openPage('education', 'education1', this, '#ffce6f')">
                             <h3>Education</h3>
                         </li>
                         <li>
                             <hr>
                         </li>
-                        <li>
+                        <li class="userinfo-color" onclick="openPage('experience', 'experience1', this, '#ffce6f')">
                             <h3>Experience</h3>
                         </li>
                         <li>
                             <hr>
                         </li>
-                        <li>
+                        <li class="userinfo-color" onclick="openPage('about', 'about1', this, '#ffce6f')"  id="defaultOpen">
                             <h3>About me</h3>
                         </li>
                     </ul>
                     <div class="section">
-                        <div class="intro" id="about">
+                        <div class="intro about tab-content" id="about">
                             <h1>HELLO,<br> I AM <span class="user-name">Shilpa Aggarwal</span></h1>
                         </div>
                         <div class="profile-img"></div>
+
+                        <div class="intro experience tab-content" id="experience">
+                            <h1>I have one year experience, so I am learning a lot of skills like <span
+                                    class="user-name">teamwork, management, testing and designing.</span></h1>
+                        </div>
+                        <div class="intro experience tab-content" id="education">
+                            <h1>I did my gradution from Kurukshetra Institute Of Technology And Management. I got<span
+                                    class="user-name"> 68.6% </span>in graduation.</h1>
+                        </div>
+                        <div class="intro experience tab-content" id="contact-us">
+                            <h1><span class="user-name mr-1">Email Address:-</span> shilpaaggarwal3495@gmail.com<br />
+                                <span class="user-name mr-1">Phone Number:-</span> 8901229840<br />
+                                <span class="user-name mr-1">Address:-</span> 191/11, gaushala bazar, thanesar city,
+                                Kurukshetra.
+                            </h1>
+                        </div>
                     </div>
-                    <!-- <div class="intro" id="experience">
-                        <h1>I have one year experience, so I am learning a lot of skills like  <span class="user-name">teamwork, management, testing and designing.</span></h1>
-                    </div> -->
-                    <!-- <div class="intro" id="experience">
-                        <h1>I did my gradution from Kurukshetra Institute Of Technology And Management. I got<span
-                                class="user-name"> 68.6% </span>in graduation.</h1>
-                    </div> -->
-                    <!-- <div class="intro" id="experience">
-                        <h1><span class="user-name">Email Address:-</span> shilpaaggarwal3495@gmail.com<br />
-                            <span class="user-name">Phone Number:-</span> 8901229840<br />
-                            <span class="user-name">Address:-</span> 191/11, gaushala bazar, thanesar city, Kurukshetra.
-                        </h1>
-                    </div> -->
                 </div>
             </div>
             <div class="col-4">
-                <!-- <h1>About me</h1> -->
-                <h1>Experience</h1>
-                <!-- <h1>Education</h1>
-                <h1>Contact us</h1> -->
+                <h1 id="about1" class="tab-content">About me</h1>
+                <h1 id="experience1" class="tab-content">Experience</h1>
+                <h1 id="education1" class="tab-content">Education</h1>
+                <h1 id="contact-us1" class="tab-content">Contact us</h1>
                 <ul class="dots-list">
                     <li>
                         <div class="dot-1"></div>
